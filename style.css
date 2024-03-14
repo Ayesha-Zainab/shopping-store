@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+}
+.sec {
+    width: 100%;
+    
+}
+.sec h1 {
+    text-align: center;
+    color: orange;
+    font-size: 35px;
+    padding-top: 25px;
+}
+.sec .list {
+    width: 500px;
+    /* border: 1px solid #000; */
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+    color: wheat;
+}
+
+.sec .list>h3 {
+    /* border: 1px solid #000; */
+    border-radius: 17px;
+    padding: 12px 17px;
+    cursor: pointer;
+}
+
+.sec .list>h3:hover {
+    background-color: rgba(255, 166, 0, 0.688);
+    color: white;
+}
+
+.sec .list>.def {
+    background-color: rgba(255, 166, 0, 0.688);
+    color: white;
+}
+
+.flex {
+    width: 80%;
+    margin-top: 30px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.flex .card {
+    border: 1px solid #000;
+    width: 340px;
+    height: 300px;
+    position: relative;
+
+}
+
+
+.flex .card>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .overlay>span{
+    cursor: pointer;
+}
+
+/* ---------------------overlay-------------- */
+.card .overlay {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    background-color: cyan;
+    position: absolute;
+    z-index: -999;
+    padding-top: 100px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: #e0a80d;
+}
+
+.card:hover .overlay{
+    z-index: 999;
+}
+
+
+@media screen and (max-width:640px) {
+    .flex .card {
+        border: 1px solid #000;
+        width: 470px;
+        height: 300px;
+        position: relative;
+        left: 2%;
+    
+    }
+    
+}
